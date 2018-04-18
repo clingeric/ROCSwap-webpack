@@ -1,0 +1,218 @@
+<template>
+  <div id="app">
+    <app-header/>
+    <router-view/>
+    <roc-footer/>
+  </div>
+</template>
+
+<script>
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import AppHeader from './components/AppHeader';
+import RocFooter from './components/RocFooter';
+export default {
+  name: 'App',
+  components: { AppHeader, RocFooter }
+}
+</script>
+
+<style>
+ body {
+    font-family: 'Inconsolata', monospace;
+    padding-bottom: 10rem;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#banner {
+    text-align: center;
+    background-color: lightgrey;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;   
+}
+
+#cover {
+    max-width: 60%; 
+    height: auto;
+}
+
+#foot {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    margin-bottom: -2rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #E9ECEF;
+}
+
+#foot_content {
+    padding-top: 1rem;
+}
+
+.menu_item {
+    margin: .5rem;
+}
+
+#active {
+    background-color: #007BFF;
+    color: white;
+}
+
+.share_form {
+    margin-right: 3rem;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+}
+
+.form_breathing_room {
+    margin: 2rem;
+}
+
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.flex-item {
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    line-height: 150px;
+}
+
+.flex-item-photo {
+    width: 200px;
+    height: 150px;
+    
+}
+
+.borrow_card {
+    margin: 1rem;
+    border-radius: 10px; 
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.borrow_body {
+    line-height: 50%;
+    
+}
+
+.borrow_body h5 {
+    font-weight: bold;
+}
+.borrow_image {
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#splash_image {
+    width: 60%;
+    margin-top: 2rem;
+}
+
+
+.grid_container {
+    display: grid;
+    grid-template-areas: 
+        "share borrow"
+        "photo photo"
+        "photo photo";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-row-gap: 50px;
+    justify-items: center;
+}
+
+#share {
+    grid-area: share;
+    width: 50%;
+}
+
+#borrow {
+    grid-area: borrow;
+    width: 50%;
+}
+
+#twitter {
+    grid-area: twitter;
+    
+}
+
+#photo {
+    grid-area: photo;
+}
+
+#brand {
+    color: #007BFF;
+    font-family: 'Inconsolata', monospace;
+    padding-left: 2rem;
+    padding-right: 1rem;
+}
+
+#responsiveNav {
+    background-color: #007BFF;
+}
+
+#readable_center {
+    margin: 5rem;
+    text-align: center;
+}
+
+#no_pass {
+    text-align: center;
+    margin: 2rem;
+}
+
+.modal-subtitle {
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+.remove_card {
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 0;
+    right: 10;
+    border-radius: 15px;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card_div {
+    position: relative;
+}
+
+#beta-warning {
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+.filters {
+    display: inline-block;
+}
+</style>
