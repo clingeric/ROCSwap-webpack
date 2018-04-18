@@ -10,6 +10,12 @@
                     <div>
                         <p class="error">{{registerError}}</p>
                     </div>
+                    <div v-if="this.$store.getters.loggedIn" id="success_alert" class="text-center alert alert-success">
+                        <h4><strong>Success!</strong></h4>
+                        <hr>
+                        <h5>Successfully Logged In</h5>
+                        <p>Click <router-link to="/swap">Here</router-link> to continue</p>
+                </div>
                     <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="fname">First Name:</label>
