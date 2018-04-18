@@ -83,11 +83,11 @@
                                     <div class="share_form">
                                         <div class="form-row">
                                             <div class="form-group col-md-6">
-                                                <label for="startDate">Start Date:</label>
+                                                <label for="startDate">Start Date (YYYY-MM-DD Format):</label>
                                                 <input required v-model="addedAvailableFrom" type="text" class="form-control" id="startDate" placeholder="Start Date" />
                                             </div>
                                             <div class="form-group col-md-6">
-                                                <label for="endDate">End Date:</label>
+                                                <label for="endDate">End Date (YYYY-MM-DD Format):</label>
                                                 <input required v-model="addedAvailableTo" type="text" class="form-control" id="endDate" placeholder="End Date" />
                                             </div>
                                         </div>

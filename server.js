@@ -188,10 +188,10 @@ app.post("/api/users", (req, res) => {
 app.put("/api/users/:id", verifyToken, (req, res) => {
   let id = parseInt(req.params.id);
   if (
-    // !req.body.fname ||
-    // !req.body.lname ||
-    // !req.body.phone ||
-    // !req.body.email ||
+    !req.body.fname ||
+    !req.body.lname ||
+    !req.body.phone ||
+    !req.body.email ||
     !req.body.password
   ) {
     return res.status(400).send();
